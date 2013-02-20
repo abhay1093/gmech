@@ -1,0 +1,51 @@
+ body{
+	background:url(../images/page-bg.jpg);
+	height:1500px;
+}
+.scroll-down{
+	position:fixed;
+	width:238px;
+	height:57px;
+	bottom:20px;
+	right:20px;
+	background:url(../images/.png) no-repeat;
+}
+.demo-instructions{
+	position:fixed;
+	width:250px;
+	height:250px;
+	top:50px;
+	left:75px;
+	background:url(../images/gmech.png) no-repeat;
+}
+#container{
+	width:800px;
+	height:900px;
+	margin:50px auto;
+	background-color:#FFF;
+	border:1px solid #999;
+}
+
+
+ul#nav {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+	margin: 0px;
+    padding: 0px;
+    list-style: none;
+    z-index:9999;
+}
+ul#nav li {width: 59px;}
+ul#nav li a {
+    display: block;
+    width: 59px;
+    height: 58px;
+	margin-left: -2px;
+}
+ul#nav .home a {background-image: url(../images/icon-home.png);}
+ul#nav .about a {background-image: url(../images/icon-about.png);}
+ul#nav .services a {background-image: url(../images/icon-services.png);}
+ul#nav .process a {background-image: url(../images/icon-process.png);}
+ul#nav .events a {background-image: url(../images/icon-events.png);}
+ul#nav .contact a {background-image: url(../images/icon-contact.png);}

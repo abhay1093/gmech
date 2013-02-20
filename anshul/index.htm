@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GMech at Galgotias</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div class="scroll-down"></div>
+        <div class="demo-instructions"></div>
+        <ul id="nav">
+            <li class="home"><a href="" title="Home"></a></li>
+            <li class="about"><a href="" title="About"></a></li>
+            <li class="services"><a href="" title="Services"></a></li>
+            <li class="process"><a href="" title="Process"></a></li>
+            <li class="events"><a href="" title="Events"></a></li>
+            <li class="contact"><a href="" title="Contact"></a></li>
+        </ul>
+       <!-- <div id="container"> -->
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('#nav a').stop().animate({'marginLeft':'-15px'},1000);
+
+                $('#nav > li').hover(
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'0px'},200);
+                    },
+                    function () {
+                        $('a',$(this)).stop().animate({'marginLeft':'-15px'},200);
+                    }
+                );
+            });
+        </script>
+    </body>
+</html>
